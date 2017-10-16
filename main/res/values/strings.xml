@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pendu Warcraft</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="btn_rejouer">Rejouer</string>
+</resources>

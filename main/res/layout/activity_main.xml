@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="fr.long_pixel.penduwarcraft.MainActivity">
+
+    <TextView
+        android:id="@+id/activity_main_letter_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/rouge"/>
+    
+    <ImageView
+        android:id="@+id/activity_main_pendu_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/un"/>
+
+    <LinearLayout
+        android:id="@+id/activity_main_word_container"
+        android:layout_below="@+id/activity_main_pendu_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_btn_container"
+        android:layout_below="@id/activity_main_word_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/activity_main_letter_input"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_main_play_btn"
+            android:text="@string/envoyer"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
